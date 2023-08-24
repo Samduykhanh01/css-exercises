@@ -25,3 +25,63 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/************* My solution ****************/
+
+body{
+  display: flex;
+  flex-direction: column;
+  /* This justify-content is column oriented*/
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none
+}
+
+li a{
+  color: black;
+  /* text-underline-offset: 0; */
+  text-decoration: none;
+}
+
+.header,
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-right: 20px; */
+  /* padding-left: 0px; */
+  /* margin-right: 10; */
+}
+
+div.footer {
+  background-color: #eeeeee;
+}
+
+div.content {
+  /*Centered horizontally because of flex-direction: column in the body*/
+  align-self: center;
+}
+
+div.input,
+div.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0px;
+}
+
+div.buttons button{
+  padding: 5px 8px;
+}
+
+ul.left-links,
+ul.right-links{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+
